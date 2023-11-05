@@ -1,7 +1,10 @@
 # Hostel_Management_System
 
-contributors: Priyanshu Gupta (@priyanshu-gupta0503)
+contributors:
+              Priyanshu Gupta (@priyanshu-gupta0503)
+
               Priyanshu Pattanayak (@Mavricx)
+              
               Sk Ramiz Raja (@Ramiz1336)
 This GitHub repository contains a simple yet robust management system(web based) for students and hostels, designed to streamline and optimize the administration of educational institutions and their associated accommodations.
 
