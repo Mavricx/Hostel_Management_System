@@ -1,5 +1,6 @@
 # Hostel_Management_System
 This GitHub repository contains a simple yet robust management system(web based) for students and hostels, designed to streamline and optimize the administration of educational institutions and their associated accommodations.
+
 Key Features:
 
 Student Management: Keep detailed records of students, including their personal information, academic history, and contact details.
