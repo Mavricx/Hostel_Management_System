@@ -1,0 +1,6 @@
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
