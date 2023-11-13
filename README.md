@@ -5,6 +5,7 @@ contributors:
               Priyanshu Gupta (@priyanshu-gupta0503)
               Priyanshu Pattanayak (@Mavricx)
               Sk Ramiz Raja (@Ramiz1336)
+              Anish More (@AnishMore224)
 This GitHub repository contains a simple yet robust management system(web based) for students and hostels, designed to streamline and optimize the administration of educational institutions and their associated accommodations.
 
 Key Features:
