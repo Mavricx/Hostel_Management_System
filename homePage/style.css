@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#navbarNav .navbar-nav li a {
+  font-size: small;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
