@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-* fixed-top" data-bs-theme="light">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -51,6 +51,71 @@
         </div>
       </div>
     </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.shiksha.com/mediadata/images/1548315846phpH2o4Nv_g.jpg"
+            class="d-block w-100"
+            alt="ITER_CAMPUS"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdrvgXbKW2b7AS9vuYrjebdCqTjYuHm_cZSw&usqp=CAU"
+            class="d-block w-100"
+            alt="2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media.getmyuni.com/azure/college-image/big/institute-of-technical-education-research-iter-bhubaneshwar.jpg"
+            class="d-block w-100"
+            alt="3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
