@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSM</title>
+    <link rel="stylesheet" href="features.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="box1">
+      <div id="navbar">
+        <img src="assests/SOA1.png" alt="soalogo" height="50px" width="50px" />
+        <div>
+          <a href="">Home</a>
+          <a href="">Programmes</a>
+          <a href="">Terms</a>
+          <a href="">Features</a>
+          <a href="">Infrastructure</a>
+          <a href="">Contact</a>
+          <a href="">Sign-in</a>
+        </div>
+      </div>
+      <div id="feature">
+        <p id="h1">Our Approach</p>
+        <p id="approach">
+          First and foremost, cleanliness and hygiene should be a top priority.
+          Regular cleaning and sanitation routines should be established,
+          encompassing not only common areas but also individual rooms and
+          bathrooms. Proper pest control measures should also be in place.
+          Safety is paramount, so regular inspections of fire exits, electrical
+          systems, and emergency equipment should be conducted. Additionally, a
+          warm and friendly staff should be employed to provide assistance and
+          create a positive atmosphere. Maintaining good communication with
+          guests and actively seeking their feedback is vital for continuous
+          improvement. Offering a variety of amenities, such as Wi-Fi, a
+          communal kitchen, and recreational spaces, can enhance the overall
+          experience. Finally, a sustainable and eco-friendly approach to
+          operations, such as recycling and energy-saving measures, can
+          contribute to a responsible and environmentally conscious hostel
+          management approach.
+        </p>
+        <div>
+          <i class="material-icons">play_arrow</i>
+          <p>Cleanliness is one of our most important aspect</p>
+        </div>
+        <div>
+          <i class="material-icons">play_arrow</i>
+          <p>State of the art living facilities</p>
+        </div>
+        <div>
+          <i class="material-icons">play_arrow</i>
+          <p>Indoor Sports and emergency</p>
+        </div>
+        <div>
+          <i class="material-icons">play_arrow</i>
+          <p>Indoor Sports and emergency</p>
+        </div>
+        <div>
+          <i class="material-icons">play_arrow</i>
+          <p>Indoor Sports and emergency</p>
+        </div>
+      </div>
+    </div>
+    <div id="facilities">
+      <div>
+        <p id="h2">Explore All The Facilities</p>
+        <p style="text-align: center">
+          Your Home Away from Home – Discover Our Hostel Experience
+        </p>
+      </div>
+      <div id="box">
+        <div id="div1">
+          <div id="Cards">
+            <img src="assests/student.jpeg" alt="student" />
+            <div><p>Games</p></div>
+          </div>
+          <div id="Cards">
+            <img src="assests/student.jpeg" alt="student" />
+            <div><p>Gym</p></div>
+          </div>
+          <div id="Cards">
+            <img src="assests/student.jpeg" alt="student" />
+            <div><p>Laundry</p></div>
+          </div>
+        </div>
+        <div id="div2">
+          <div id="Cards">
+            <img src="assests/student.jpeg" alt="student" />
+            <div><p>Faculties</p></div>
+          </div>
+          <div id="Cards">
+            <img src="assests/student.jpeg" alt="student" />
+            <div><p>Library</p></div>
+          </div>
+          <div id="Cards">
+            <img src="assests/student.jpeg" alt="student" />
+            <div><p>Clubs</p></div>
+          </div>
+        </div>
+      </div>
+      <div><button id="btn1"></button> <button id="btn2"></button></div>
+    </div>
+    <div id="image">
+      <img src="assests/college.jpg" alt="">
+    </div>
+    <div id="events">
+      <p id="h2">Events</p>
+      <p>
+        We at SOA believe that school activities enhance students'
+        understanding,skill and effectiveness in the fields of their choice and
+        provides them the opportunity to participate and organize events and
+        competitions to showcase their latent talents. This enables them to gain
+        the necessary experience and exposure and making the process of learning
+        more engaging and fun.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <div class="image-item">
+        <img src="assests/college.jpg" alt="">
+        <div class="overlay">
+          <div class="search-icon">&#128269;</div>
+        </div>
+      </div>
+        
+        <div class="image-item">
+          <img src="assests/student.jpeg" alt="">
+          <div class="overlay">
+            <div class="search-icon">&#128269;</div>
+          </div>
+        </div>
+        <div class="image-item">
+          <img src="assests/college.jpg" alt="">
+          <div class="overlay">
+            <div class="search-icon">&#128269;</div>
+          </div>
+        </div>
+          
+          <div class="image-item">
+            <img src="assests/student.jpeg" alt="">
+            <div class="overlay">
+              <div class="search-icon">&#128269;</div>
+            </div>
+          </div>
+          <div class="image-item">
+            <img src="assests/college.jpg" alt="">
+            <div class="overlay">
+              <div class="search-icon">&#128269;</div>
+            </div>
+          </div>
+            
+            <div class="image-item">
+              <img src="assests/student.jpeg" alt="">
+              <div class="overlay">
+                <div class="search-icon">&#128269;</div>
+              </div>
+            </div>
+    </div>
+
+    <div id="Contact">
+      <p id="para">For any further  enquires and Information</p>
+      <p id="ContactUs">Contact Us</p>
+    </div>
+
+
+    <script>
+      const btn2 = document.getElementById("btn2");
+      const btn1 = document.getElementById("btn1");
+      const div1 = document.getElementById("div1");
+      const div2 = document.getElementById("div2");
+
+      btn2.onclick = function () {
+        div1.style.display = "none";
+        div2.style.display = "flex";
+        btn1.style.backgroundColor = "white";
+        btn2.style.backgroundColor = "#33cf5f";
+      };
+      btn1.onclick = function () {
+        div1.style.display = "flex";
+        div2.style.display = "none";
+        btn1.style.backgroundColor = "#33cf5f";
+        btn2.style.backgroundColor = "white";
+      };
+    </script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("#slideRight").click(function () {
+          $("#div1").hide("slow", function () {
+            $("#div2").show("slow");
+          });
+        });
+        $("#slideLeft").click(function () {
+          $("#box").animate({ scrollLeft: "-=200px" }, "slow");
+        });
+      });
+    </script> -->
+  </body>
+</html>
