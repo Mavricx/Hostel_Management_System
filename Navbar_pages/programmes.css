@@ -4,16 +4,16 @@
   src: url(/font-poppins/Poppins-Regular.ttf);
 }
 body{
-  height: 200%;
-  margin: 0px;
-  
+  margin: 0px; 
 }
 img{
   border-radius: 50%;
   position: fixed !important;
 }
-
-      .container-fluid {
+.nav-link{
+  font-weight: lighter;
+}
+.container-fluid {
         background-image: url("/features/assests/bg.avif");
         background-size: cover;
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@ img{
         background: rgba(247, 250, 247, 0.8);
         color: black;
         padding: 14px 28px;
-        font-size: 16px;
+        
         text-align: left;
         box-shadow: 10px 10px 5px rgb(84, 88, 90);
         font-family: poppins-regular;
@@ -54,19 +54,7 @@ img{
        text-align: center;
         display: inline-block;
       }
-      .contact_us{
-        display: inline-block;
-        height: 40px;
-        width: 200px;
-        background-color: rgb(255, 51, 0);
-        border-radius: 10px;
-        text-decoration: none;
-        text-align: center;
-        padding: 10px;
-        color: white;
-        font-family: poppins-regular;
-
-      }
+      
 
       li{
         font-weight: bold;
@@ -87,7 +75,7 @@ img{
     background: rgb(255, 51, 0);
     color: black;
     padding: 14px 28px;
-    font-size: 18px;
+  
     text-align: left;
     box-shadow: 10px 10px 5px rgb(84, 88, 90);
     font-family: poppins-regular;
@@ -97,18 +85,22 @@ img{
     top: 0px;
    
   }
+  .contact_us{
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(255, 51, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: poppins-regular;
+
+  }
   .contact_us:hover
 {
-  display: inline-block;
-  height: 40px;
-  width: 200px;
   background-color: rgb(43, 67, 226);
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  font-family: poppins-regular;
   box-shadow: 10px 10px 5px rgb(84, 88, 90);
   transition: 300ms;
 }
