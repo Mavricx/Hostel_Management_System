@@ -1,32 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mooli&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
-  text-decoration: none;
+  text-decoration: none !important;
   margin: 0;
   padding: 0%;
   font-family: "Poppins";
 }
 #box1 {
-  height: 900px;
+  height:auto;
   background-image: url("assests/bg.avif");
   background-size: cover;
 }
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1%;
-  align-items: center;
+.bg-body-tertiary{
+  background:none !important;
 }
-#navbar div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 60%;
-}
-#navbar div a {
+
+.navbar-nav li a {
   color: gray;
   position: relative;
+  padding: 0 0 0 0 !important;
+  width: fit-content;
+ 
 }
-#navbar div a::after {
+
+.navbar-nav li a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -39,13 +35,28 @@
   transition: transform 0.5s ease-out;
 }
 
-#navbar div a:hover {
+.navbar-nav li a:hover {
   color: white;
 }
-#navbar div a:hover::after {
+
+.navbar-nav li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav li{
+  margin:0 15px !important;
+  padding: 8px;
+  
+}
+
+#navbarNav{
+  margin-top: 10px;
+}
+
 #h1 {
   color: white;
   padding: 0 0 1% 3%;
@@ -55,6 +66,7 @@
 #feature {
   position: relative;
   top: 70px;
+  height: 900px;
 }
 #approach {
   margin: auto;
@@ -78,7 +90,9 @@
 #feature div p {
   display: inline-block;
   font-weight: 500;
+  margin: 0;
 }
+
 i {
   color: #df4f3a;
   margin: 0 1% 0 -1%;
@@ -91,7 +105,6 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 
 }
 #h2 {
@@ -138,9 +151,6 @@ i {
   font-weight: 300;
   background-color: white;
   padding: 20px;
-  ;
-  /* margin: 2% 0; */
-  
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 #Cards p{
@@ -182,6 +192,43 @@ i {
 #events #h2{
   margin-bottom: 25px;
 }
+
+#symbol-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#symbol{
+  
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+
+}
+
+#symbol p{
+  color: #171616;
+  display: inline;
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-around;
+  padding: 0 10px;
+}
+#line{
+  font-size: 50px;
+}
+#cross{
+  font-size: 20px;
+}
+
+
+/* #facilities div #symbol{
+  position: relative;
+  width: 200px;
+  left: 170px;
+} */
 #image img{
   width: 100%;
   height: 550px;
@@ -218,22 +265,22 @@ i {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 255, 0, 0); /* Initial background color (transparent green) */
+  background-color: rgba(0, 255, 0, 0); 
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Initial opacity (invisible) */
+  opacity: 0; 
   transition: background-color 0.3s, opacity 0.3s;
   cursor: pointer;
 }
 
 .image-item:hover .overlay {
-  background-color: rgba(0, 255, 0, 0.7); /* Hover background color (semi-transparent green) */
-  opacity: 1; /* Hover opacity (fully visible) */
+  background-color: rgba(0, 255, 0, 0.7); 
+  opacity: 1; 
 }
 
 .overlay .search-icon {
-  color: white; /* Icon color */
+  color: white; 
   font-size: 30px;
 }
 
@@ -253,6 +300,7 @@ i {
 #Contact #para{
   color: #33cf5f;
   text-shadow: 3px 4px 4px #e09696;
+  text-align: center;
 }
 
 #ContactUs{
@@ -260,4 +308,49 @@ i {
   background-color: #df4f3a;
   padding: 10px 20px;
   color: white;
+}
+
+#ContactUs:hover{
+  background-color: #9a3424;
+}
+
+
+@media only screen and (max-width:940px) {
+  #facilities{
+    height: 2400px;
+  }
+  #box #div1 {
+    display: flex;
+    flex-direction: column !important ;
+  }
+  #box #div2{
+    display: flex;
+    flex-direction: column;
+  }
+  #Cards{
+    margin: 0;
+    padding: 0;
+    height: 350px;
+  }
+
+  .butn{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  #box1{
+    height: auto;
+  }
+  #feature{
+    height: 1100px;
+  }
+  
+}
+
+@media only screen and (max-width:300px){
+  #feature{
+    height: 1550px;
+  }
+
 }
