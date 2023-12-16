@@ -4,26 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HSM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="features.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/329df66e1c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="box1">
-      <div id="navbar">
-        <img src="assests/SOA1.png" alt="soalogo" height="50px" width="50px" />
-        <div>
-          <a href="/homePage/index.html">Home</a>
-          <a href="/Navbar_pages/programmes.html">Programmes</a>
-          <a href="/Navbar_pages/terms.html">Terms</a>
-          <a href="">Features</a>
-          <a href="">Infrastructure</a>
-          <a href="">Contact</a>
-          <a href="">Sign-in</a>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assests/SOA1.png"
+              alt="Soalogo"
+              width="50px"
+              height="50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/homePage/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Navbar_pages/programmes.html"
+                  >Programmes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Navbar_pages/terms.html">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Hostel_Management_System/features/features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Infrastructure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign-in</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
       <div id="feature">
         <p id="h1">Our Approach</p>
         <p id="approach">
@@ -71,6 +120,17 @@
         <p style="text-align: center">
           Your Home Away from Home – Discover Our Hostel Experience
         </p>
+        <div id="symbol-container">
+          <div id="symbol">
+            <div>
+              <p id="line">&#x23AF;</p>
+            </div>
+            <p id="cross">&#x2573;</p>
+            <div>
+              <p id="line">&#x23AF;</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="box">
         <div id="div1">
@@ -102,7 +162,7 @@
           </div>
         </div>
       </div>
-      <div><button id="btn1"></button> <button id="btn2"></button></div>
+      <div class="butn"><button id="btn1"></button> <button id="btn2"></button></div>
     </div>
     <div id="image">
       <img src="assests/college.jpg" alt="" />
@@ -117,6 +177,17 @@
         the necessary experience and exposure and making the process of learning
         more engaging and fun.
       </p>
+      <div id="symbol-container">
+        <div id="symbol">
+          <div>
+            <p id="line">&#x23AF;</p>
+          </div>
+          <p id="cross">&#x2573;</p>
+          <div>
+            <p id="line">&#x23AF;</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="image-container">
@@ -185,17 +256,6 @@
         btn2.style.backgroundColor = "white";
       };
     </script>
-    <!-- <script>
-      $(document).ready(function () {
-        $("#slideRight").click(function () {
-          $("#div1").hide("slow", function () {
-            $("#div2").show("slow");
-          });
-        });
-        $("#slideLeft").click(function () {
-          $("#box").animate({ scrollLeft: "-=200px" }, "slow");
-        });
-      });
-    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
