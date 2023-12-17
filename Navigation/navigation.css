@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mooli&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  text-decoration: none !important;
+  font-family: "Poppins";
+}
+
+.bg-body-tertiary {
+  background: none !important;
+}
+
+.navbar-nav li a {
+  color: gray;
+  position: relative;
+  padding: 0 0 0 0 !important;
+  width: fit-content;
+}
+
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #df4f3a;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.navbar-nav li a:hover {
+  color: white;
+}
+
+.navbar-nav li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav li {
+  margin: 0 15px !important;
+  padding: 8px;
+}
+
+#navbarNav {
+  margin-top: 10px;
+}

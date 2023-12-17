@@ -10,52 +10,7 @@
   background-image: url("assests/bg.avif");
   background-size: cover;
 }
-.bg-body-tertiary{
-  background:none !important;
-}
 
-.navbar-nav li a {
-  color: gray;
-  position: relative;
-  padding: 0 0 0 0 !important;
-  width: fit-content;
- 
-}
-
-.navbar-nav li a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #df4f3a;
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-
-.navbar-nav li a:hover {
-  color: white;
-}
-
-.navbar-nav li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.navbar-nav {
-  margin-left: auto;
-}
-.navbar-nav li{
-  margin:0 15px !important;
-  padding: 8px;
-  
-}
-
-#navbarNav{
-  margin-top: 10px;
-}
 
 #h1 {
   color: white;
@@ -224,11 +179,6 @@ i {
 }
 
 
-/* #facilities div #symbol{
-  position: relative;
-  width: 200px;
-  left: 170px;
-} */
 #image img{
   width: 100%;
   height: 550px;

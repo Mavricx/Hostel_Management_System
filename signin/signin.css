@@ -1,0 +1,151 @@
+html,
+body {
+  background-image: url("assests/bg.avif");
+  background-size: cover;
+  height: 100%;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 450px;
+  padding: 4%;
+  border: 0px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 15px 0 30px 0 !important;
+}
+
+.contentunder {
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin: 25px 10px;
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.content {
+  width: 90%;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.loginbutton {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  background-image: linear-gradient(to bottom right, #008cd1, #cb6ce6);
+  cursor: pointer;
+}
+
+.borderouter {
+  margin: auto;
+}
+
+p {
+  margin: 6% 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  margin-top: 10px;
+  height: 86%;
+}
+.row,
+.col {
+  height: 100%;
+}
+
+.carousel-container {
+  height: 100%;
+  /* width: 50%; */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-container .carousel {
+  margin: 0 5% 0 8%;
+  height: 100%;
+  /* width: 100%; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel-container .carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.btn {
+  color: antiquewhite;
+  margin: 1.5%;
+  padding: 0.375rem 5px;
+}
+#btn1 {
+  background-color: #008cd1;
+}
+
+#btn2 {
+  background-color: #239fdd;
+}
+
+#btn3 {
+  background-color: #46acde;
+}
+
+#info {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  margin: 0%;
+  color: #d42f16;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hvr {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 820px) {
+  .carousel-container {
+    display: none;
+  }
+}
