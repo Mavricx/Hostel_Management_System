@@ -17,62 +17,21 @@
       src="https://kit.fontawesome.com/329df66e1c.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      fetch("/Navigation/navigation.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sharedContent").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error fetching content:", error);
+        });
+    </script>
   </head>
   <body>
+    
     <div id="box1">
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
-        data-bs-theme="dark"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assests/SOA1.png"
-              alt="Soalogo"
-              width="50px"
-              height="50px"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/homePage/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Navbar_pages/programmes.html"
-                  >Programmes</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Navbar_pages/terms.html">Terms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Hostel_Management_System/features/features.html">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Infrastructure</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign-in</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div id="sharedContent"></div>
       <div id="feature">
         <p id="h1">Our Approach</p>
         <p id="approach">
