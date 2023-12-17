@@ -78,6 +78,9 @@ i {
     align-items: center;
     justify-content: space-evenly;
 }
+#facilities1{
+    width: 100%;
+}
 #div2{
   display: flex;
   flex-direction: row;
@@ -89,7 +92,7 @@ i {
 }
 
 #Cards{
-   margin: 3% 0;
+   margin: 2% 0 3% 0;
    padding: 2%;
     display: flex;
     flex-direction: column;
@@ -152,32 +155,12 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 #symbol{
-  
-  display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-
+  mix-blend-mode: multiply;
+  width: 20%;
 }
-
-#symbol p{
-  color: #171616;
-  display: inline;
-  height: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:space-around;
-  padding: 0 10px;
-}
-#line{
-  font-size: 50px;
-}
-#cross{
-  font-size: 20px;
-}
-
 
 #image img{
   width: 100%;
