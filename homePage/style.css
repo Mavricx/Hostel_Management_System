@@ -12,6 +12,25 @@
 .nav-link:hover {
   text-decoration: underline;
 }
+.curriculums #row1 {
+  margin: 2%;
+}
+.curriculums #row1 {
+  width: 100%;
+  height: auto;
+}
+.co11 {
+  width: 59%;
+  height: auto;
+}
+#girlCoding {
+  opacity: 0.9;
+}
+/* #Approach { 
+  position: relative;
+  top: 0.3%;
+  left: 0.2%;
+}  */
 .carousel-inner .carousel-item img {
   max-width: 100%;
   height: 100%;
@@ -24,4 +43,201 @@
 }
 body {
   border: 10% solid white;
+}
+#facility_section {
+  display: grid;
+  grid-template-rows: repeat(6, 200px);
+  grid-template-columns: repeat(3, 2fr);
+  height: 100vh;
+  overflow: visible;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#first {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-image: url("images/Block-Based-Coding-for-Kids.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  padding: 4%;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease-in-out 0s;
+}
+#first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top left, transparent 0%, black 170%);
+  pointer-events: none;
+  z-index: 0;
+}
+#second {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+  background-color: rgb(196, 72, 54);
+  color: white;
+  padding: 10%;
+  position: relative;
+  transition: all 0.5s ease-in-out 0s;
+}
+#third {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 2;
+  background-color: blueviolet;
+  background-image: url("images/Conference-Speech.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  padding: 8%;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease-in-out 0s;
+}
+#third::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top left, transparent 0%, black 500%);
+  pointer-events: none;
+  z-index: 0;
+}
+#fourth {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 2;
+  background-color: rgb(193, 48, 26);
+  color: white;
+  padding: 10%;
+  transition: all 0.5s ease-in-out 0.2s;
+}
+#fifth {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 2;
+
+  background-image: url("images/PG-degree.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease-in-out 0s;
+}
+#fifth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top left, transparent 0%, black 300%);
+  pointer-events: none;
+  z-index: 0;
+}
+#sixth {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 2;
+  background-color: rgb(129, 24, 8);
+  color: white;
+  padding: 10%;
+  transition: all 0.5s ease-in-out 0s;
+}
+#seventh {
+  grid-column: 2 / span 2;
+  grid-row: 5 / span 2;
+  background-image: url("images/61fae3448eb989184f828084_5f57c46384cca65e79589acf_students1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out 0s;
+}
+#first:hover {
+  box-shadow: 2px 2px 10px black;
+}
+#second:hover {
+  box-shadow: 2px 2px 10px black;
+}
+#third:hover {
+  box-shadow: 2px 2px 10px black;
+}
+#fourth:hover {
+  box-shadow: 2px 2px 10px black;
+}
+#fifth:hover {
+  box-shadow: 2px 2px 10px black;
+}
+#sixth:hover {
+  box-shadow: 2px 2px 10px black;
+}
+#seventh:hover {
+  box-shadow: 2px 2px 10px black;
+}
+@media (max-width: 720px) {
+  #first {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #second {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #third {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #fourth {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #fifth {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #sixth {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 3;
+  }
+  #seventh {
+    grid-row: 7 / span 3;
+  }
+}
+.table {
+  background-color: rgba(128, 128, 128, 0.128);
+  padding: 1%;
+  border-radius: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  /* margin-left: 2%; */
+  /* margin-right: 2%; */
+  position: relative;
+  top: 550px;
+}
+.fa-solid {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  color: white;
+  border-radius: 50% !important;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust the margin if needed to separate the icon from the text */
+.col i {
+  margin-right: 8px; /* Adjust the margin as needed */
+}
+.row {
+  border-radius: 2%;
 }
