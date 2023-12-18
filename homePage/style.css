@@ -240,3 +240,39 @@ body {
     background-color: #0b100b;
   }
 }
+#OppAndAd {
+  background-color: rgb(253, 250, 250);
+  position: relative;
+  top: 560px;
+  padding: 0%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 3%;
+}
+#graduation {
+  height: auto;
+  max-width: 90%;
+}
+#AdAndOpp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  #OppAndAd {
+    position: relative;
+    top: 540px;
+  }
+  #AdAndOpp {
+    display: block;
+  }
+  #graduation {
+    height: auto;
+    max-width: 100%;
+    padding: 2%;
+  }
+  #txtAdAndOpp {
+    margin-top: 10px;
+    padding: 2%;
+  }
+}
