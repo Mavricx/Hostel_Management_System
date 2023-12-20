@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200&family=Young+Serif&display=swap");
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .carousel-inner {
   position: relative;
@@ -43,7 +46,7 @@ body {
   display: grid;
   grid-template-rows: repeat(6, 200px);
   grid-template-columns: repeat(3, 2fr);
-  height: 100vh;
+  /* height: 140vh; */
   overflow: visible;
   position: relative;
   margin-top: 5%;
@@ -205,10 +208,8 @@ body {
   background-color: rgba(128, 128, 128, 0.128);
   padding: 1%;
   border-radius: 2%;
-  margin-top: 60px;
   margin-bottom: 15px;
   position: relative;
-  top: 550px;
 }
 .fa-solid {
   height: 25px;
@@ -243,7 +244,6 @@ body {
 #OppAndAd {
   background-color: rgb(253, 250, 250);
   position: relative;
-  top: 560px;
   padding: 0%;
   margin-left: 4%;
   margin-right: 4%;
@@ -259,10 +259,6 @@ body {
   align-items: center;
 }
 @media (max-width: 1000px) {
-  #OppAndAd {
-    position: relative;
-    top: 540px;
-  }
   #AdAndOpp {
     display: block;
   }
@@ -274,5 +270,116 @@ body {
   #txtAdAndOpp {
     margin-top: 10px;
     padding: 2%;
+  }
+}
+.body1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+.card {
+  border-radius: 25px 25px 0 0 !important;
+  background-color: #fff;
+  overflow: hidden;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0px 25px;
+}
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070f4;
+}
+.overlay::after {
+  border-radius: 0px 25px 0px 0px;
+  background-color: #fff;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 50%;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+#piku {
+  object-fit: cover;
+}
+.name {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #333;
+}
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+  font-weight: 500;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #265d26;
+}
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
   }
 }
