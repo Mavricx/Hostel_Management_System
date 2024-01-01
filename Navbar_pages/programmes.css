@@ -2,97 +2,80 @@
   font-family: poppins-regular;
   src: url(/font-poppins/Poppins-Regular.ttf);
 }
-body {
+*{
   margin: 0px;
+  padding: 0px;
 }
-img {
-  border-radius: 50%;
-  position: fixed !important;
-}
-.nav-link {
-  font-weight: lighter;
-}
-.container-fluid {
-  background-image: url("/features/assests/bg.avif");
+body{
+  background-image: url(/features/assests/bg.avif);
+  background-repeat: repeat-y;
   background-size: cover;
-  background-repeat: no-repeat;
-  border-top: 18% solid white;
-  height: 100%;
-  width: 100%;
-}
-.block {
-  display: inline-block;
-  width: 80%;
-  height: 100%;
-  border: none;
-  background: rgba(247, 250, 247, 0.8);
-  color: black;
-  padding: 14px 28px;
-
-  text-align: left;
-  box-shadow: 10px 10px 5px rgb(84, 88, 90);
   font-family: poppins-regular;
 }
-
-ul.dropdown-menu {
+.display-5{
+  color: white;
+}
+.flip{
   background-color: white;
-  padding: 2%;
-  line-height: 27px;
   width: 100%;
-  background: rgba(218, 218, 218, 0.9);
-  font-family: poppins-regular;
-  overflow: hidden;
-}
-.footer {
-  font-family: poppins-regular;
-  font-weight: 500;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  display: inline-block;
-}
-
-li {
-  font-weight: bold;
-}
-.display-5 {
-  color: white;
-}
-.navbar-nav {
-  margin-left: auto;
-}
-
-span {
-  display: inline-block;
-  width: 19%;
-  height: 100%;
-  border: none;
-  background: rgb(255, 51, 0);
-  color: black;
-  padding: 14px 28px;
-
-  text-align: left;
-  box-shadow: 10px 10px 5px rgb(84, 88, 90);
-  font-family: poppins-regular;
-  position: absolute;
-  right: 2px;
-  border-radius: 5%;
-  top: 0px;
-}
-.contact_us {
-  display: inline-block;
-  height: 40px;
-  width: 200px;
-  background-color: rgb(255, 51, 0);
   border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  font-family: poppins-regular;
+  height: 18%;
+  padding: 1%;
+  color: black;
+  box-shadow: 10px 10px 5px rgb(84, 88, 90);
+
 }
-.contact_us:hover {
+.flip:hover{
+  color:white;
+  background-color: dodgerblue;
+  
+}
+.panel,	.active	{
+  text-align: left;
+  background-color:rgba(255, 255, 255, 0.7);
+  border-radius: 3%;
+  }
+  .panel {
+  padding: 2%;
+  display: none;
+  }
+  
+  .p1{
+  float: left;
+   
+
+  }
+  .p2{
+     
+
+   float: right;
+   color: black;
+   border: 2px solid rgb(224, 63, 15);
+   border-radius: 10%;
+   text-align: center;
+  
+  }
+
+  .contact_us{
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(255, 51, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: poppins-regular;
+
+  }
+  .contact_us:hover
+{
   background-color: rgb(43, 67, 226);
   box-shadow: 10px 10px 5px rgb(84, 88, 90);
   transition: 300ms;
+}
+.footer{
+  color: white;
+  font-size: larger;
 }
