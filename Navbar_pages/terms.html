@@ -9,180 +9,110 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="terms.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="programmes.css" />
+    <script>
+      $(document).ready(function () {
+        $(".flip").click(function () {
+          $(this).next(".panel").slideToggle("1000");
+        });
+      });
+    </script>
+    <script>
+      fetch("/Navigation/navigation.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sharedContent").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error fetching content:", error);
+        });
+    </script>
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-*" data-bs-theme="dark">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a href="https://www.soa.ac.in/">
-            <img
-              src="/features/assests/SOA1.png"
-              alt="soa_logo"
-              height="60px"
-              width="60px"
-          /></a>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="/homePage/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="programmes.html"
-                  >Programmes</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Terms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/features/features.html">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Infrastructure</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign-in</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <br />
-
-      <br />
-      <div class="display-5">Rules And Regulation</div>
+      <div id="sharedContent"></div>
       <br />
       <br />
+      <div class="display-5">Rules And Regulations.</div>
       <br />
-      <div class="dropdown">
-        <button
-          class="btn dropdown-toggle block btn-outline-primary"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          &#x27A4; Rule Book for Boys Hostels<span>More Info &#x2193;</span>
-        </button>
-        <ul class="dropdown-menu">
-          <li>&#x2022;Timing for attendance:11:30pm.</li>
-          <li>&#x2022;Late entry will be reported to parents/ guardian.</li>
-          <li>
-            &#x2022;Mess Food timing .<a href="#">Downlod(Food menu+Timing)</a>
-          </li>
-          <li>&#x2022;Fines will be charged onn misconduct</li>
-          <li>
-            &#x2022;Laundry and Other Services are set according to convience
-          </li>
-          <li>&#x2022;<a href="#">Download Hostel's guidebook</a></li>
+      <br />
+      <div class="flip">
+        <span class="p1">&#x27A4; Rule Book for Boys Hostels</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp;&#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>Timing for attendance:11:30pm.</li>
+          <li>Late entry will be reported to parents/ guardian.</li>
+          <li>Mess Food Timing<a href="#">Downlod(Food menu+Timing)</a></li>
+          <li>Fines will be charged on misconduct</li>
+          <li>Laundry and Other Services Are set according to convience</li>
+          <li><a href="#">Downlod Hostel's Guide book </a></li>
         </ul>
       </div>
       <br />
-      <br />
-      <div class="dropdown">
-        <button
-          class="btn dropdown-toggle block btn-outline-primary"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          &#x27A4;Rules for Girls Hostel<span class="btn-primary"
-            >More info &#x2193;</span
-          >
-        </button>
-        <ul class="dropdown-menu">
-          <li>&#x2022;Timing for attendance :11:30 pm</li>
-          <li>&#x2022;Late entry will be reported to parents/ guardian.</li>
-          <li>
-            &#x2022;Mess Food timing .<a href="#">Downlod(Food menu+Timing)</a>
-          </li>
-          <li>&#x2022;Fines will be charged onn misconduct</li>
-          <li>
-            &#x2022;Laundry and Other Services are set according to convience
-          </li>
-          <li>&#x2022;<a href="#">Download Hostel's guidebook</a></li>
+      <br /><br />
+      <div class="flip">
+        <span class="p1">&#x27A4; Rules For Girls Hostels.</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp; &#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>Timing for attendance:11:30pm.</li>
+          <li>Late entry will be reported to parents/ guardian.</li>
+          <li>Mess Food Timing<a href="#">Downlod(Food menu+Timing)</a></li>
+          <li>Fines will be charged on misconduct</li>
+          <li>Laundry and Other Services Are set according to convience</li>
+          <li><a href="#">Downlod Hostel's Guide book </a></li>
         </ul>
       </div>
-      <br />
+      <br /><br />
       <div class="display-5">Fines</div>
-      <br />
-      <div class="dropdown">
-        <button
-          class="btn dropdown-toggle block btn-outline-primary"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          &#x27A4; Fines Issued on misconduct<span
-            >Info and Details &#x2193;</span
-          >
-        </button>
-        <ul class="dropdown-menu">
-          <li>&#x2022;Fines for late entry: &#8377;250</li>
-          <li>&#x2022;Fines for making loud noises: &#8377;500</li>
-          <li>
-            &#x2022;Fines for keeping prohibited electronic equipments: &#8377;
-            1000
-          </li>
-          <li>&#x2022;Fines for uncleniness:&#8377;100</li>
-          <li>&#x2022;Fines for keeping Lights and fan unneccessaryly</li>
-          <li>&#x2022;Fines for breaking public goods (Dependon goods)</li>
-          <li>&#x2022;More Detailed list.<a href="#">Downlod</a></li>
+      <br /><br />
+      <div class="flip">
+        <span class="p1">&#x27A4;Fines Issued on Misconduct</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp; &#x2193;</span>
+      </div>
+      <div class="panel">
+        <ul>
+          <li>Fines for late entry: ₹250</li>
+          <li>Fines for making loud noises: ₹500</li>
+          <li>Fines for keeping prohibited electronic equipments: ₹ 1000</li>
+          <li>Fines for uncleniness:₹100</li>
+          <li>Fines for keeping Lights and fan on unneccessaryly</li>
+          <li>Fines for breaking public goods (Depends on goods)</li>
+
+          <li>More Detailed list<a href="#">Downlod </a></li>
         </ul>
       </div>
-      <br />
-      <br />
-      <div class="dropdown">
-        <button
-          class="btn dropdown-toggle block btn-outline-primary"
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
+      <br /><br /><br />
+      <div class="flip">
+        <span class="p1"
+          >&#x27A4;Fines Issued on late submisson of Hostel fee</span
         >
-          &#x27A4; Fines Issued on late submission of hostel fees<span
-            >Info and Details &#x2193;</span
-          >
-        </button>
-        <ul class="dropdown-menu">
-          <li>&#x2022;Fines for late fee submission :&#8377; 1000</li>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp; &#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>Fines for late fee submission :₹ 1000</li>
           <li>
-            &#x2022;Being late for fee submission for more than two month causes
-            evacuation.
+            Being late for fee submission for more than two month causes
+            evacuation
           </li>
-          <li>
-            &#x2022;For more details about fee submission.<a href="#"
-              >Download</a
-            >
-          </li>
-          <li>&#x2022;Payment without receipt will be considered void/null.</li>
+          <li>For More details about fee submission <a href="#">Downlod</a></li>
+          <li>Payment Without reciept Will be considered Void / null</li>
         </ul>
       </div>
-      <br />
-      <br />
-      <br />
+      <br /><br />
       <div class="footer">For Any Further Queries</div>
       <br />
       <br />
       <a class="contact_us" href="contactus.html">&#x27A4; Contact Us</a>
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   </body>
 </html>
