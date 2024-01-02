@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="programmes.css" />
+    <script>
+      $(document).ready(function () {
+        $(".flip").click(function () {
+          $(this).next(".panel").slideToggle("1000");
+        });
+      });
+    </script>
+    <script>
+      fetch("/Navigation/navigation.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("sharedContent").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error fetching content:", error);
+        });
+    </script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="sharedContent"></div>
+      <br />
+      <br />
+      <div class="display-5">Contacts</div>
+      <br />
+      <br />
+      <div class="flip">
+        <span class="p1">&#x27A4;Contact for Boys Hostels</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp;&#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>
+            <ul>
+              <b>Superintendent</b
+              >:Sasanka Choudhury
+              <li>+918658******</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Canteen Head</b
+              >:Roshan Mohapatra
+              <li>+918658******</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Care Taker</b>
+              :Ashutosh Rath
+              <li>+918658******</li>
+            </ul>
+          </li>
+          <li><a href="#">Downlod Contact Sheet </a></li>
+        </ul>
+      </div>
+      <br />
+      <br /><br />
+      <div class="flip">
+        <span class="p1">&#x27A4; Contact for Girls Hostels</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp; &#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>
+            <ul>
+              <b>Superintendent</b
+              >:Ankita Senapati
+              <li>+918658******</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Canteen Head</b
+              >:Pratima Rout
+              <li>+918658******</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Care Taker</b
+              >:Shreya Sharma
+              <li>+918658******</li>
+            </ul>
+          </li>
+          <li><a href="#">Downlod Contact Sheet </a></li>
+        </ul>
+      </div>
+      <br /><br /><br />
+      <div class="display-5">Emails</div>
+      <br /><br /><br />
+      <div class="flip">
+        <span class="p1">&#x27A4; Emails for Boys Hostels</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp; &#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>
+            <ul>
+              <b>Superintendent</b
+              >:Sasanka Choudhury
+              <li>sasankachoudhury**@gamil.com</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Canteen Head</b
+              >:Roshan Mohapatra
+              <li>roshanmohapatra**@gamil.com</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Care Taker</b
+              >:Ashutosh Rath
+              <li>ashutoshrath**@gmail.com</li>
+            </ul>
+          </li>
+          <li><a href="#">Downlod Contact Sheet </a></li>
+        </ul>
+      </div>
+      <br /><br /><br />
+      <div class="flip">
+        <span class="p1">&#x27A4; Emails for Girls Hostels</span>
+        &nbsp; &nbsp;
+        <span class="p2">&#x27A4;More info &nbsp; &#x2193;</span>
+      </div>
+      <div class="panel btn-outline-primary">
+        <ul>
+          <li>
+            <ul>
+              <b>Superintendent</b
+              >:Ankita Senapati
+              <li>aniktasenapati**@gamil.com</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Canteen Head</b
+              >:Pratima Rout
+              <li>pratimarout**@gamil.com</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <b>Care Taker</b
+              >:Shreya Sharma
+              <li>shreyasharma**@gmail.com</li>
+            </ul>
+          </li>
+          <li><a href="#">Downlod Contact Sheet </a></li>
+        </ul>
+      </div>
+      <br /><br />
+      <div class="footer">For Any Further Queries</div>
+      <br />
+      <br />
+      <a class="contact_us" href="contactus.html">&#x27A4; Contact Us</a>
+    </div>
+  </body>
+</html>
